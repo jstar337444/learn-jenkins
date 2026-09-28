@@ -16,7 +16,7 @@ public class CalculatorService {
     public double discount(double price, double percentage) {
 
         if (price < 0 || percentage < 0 || percentage > 100) {
-            throw new IllegalArgumentException("Invalid input");
+            throw new IllegalArgumentException("Invalid inputs");
         }
 
         return price - (price * percentage / 100);
